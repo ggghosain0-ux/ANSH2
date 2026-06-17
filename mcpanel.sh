@@ -1,5 +1,3 @@
-ANSH MC PANEL INSTALLER
-
 #!/bin/bash
 
 clear
