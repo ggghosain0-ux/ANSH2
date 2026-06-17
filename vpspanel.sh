@@ -1,5 +1,3 @@
-VPS PANEL INSTALLER (Professional Edition)
-
 #!/bin/bash
 
 # VPS PANEL INSTALLER
