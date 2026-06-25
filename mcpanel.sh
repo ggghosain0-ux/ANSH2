@@ -5,7 +5,7 @@ clear
 while true; do
     clear
     echo "========================================="
-    echo "       ANSH MC PANEL INSTALLER"
+    echo "        MC PANEL INSTALLER"
     echo "========================================="
     echo ""
     echo "1) SKYPORTD PANEL"
