@@ -1,32 +1,48 @@
 #!/bin/bash
 
 clear
-echo "=================================="
-echo "      DASHBOARD INSTALL"
-echo "=================================="
-echo "1. VOIDORA CLOUD Dashboard"
-echo "2. SKYPORTD PANEL Dashboard"
+
+echo " ______ _   _ _____  ______ _____  __   __"
+echo "|  ____| \ | |  __ \|  ____|  __ \ \ \ / /"
+echo "| |__  |  \| | |  | | |__  | |__) | \ V / "
+echo "|  __| | . \` | |  | |  __| |  _  /   > <  "
+echo "| |____| |\  | |__| | |____| | \ \  / . \\ "
+echo "|______|_| \_|_____/|______|_|  \_\/_/ \_\\"
 echo
-read -p "Select an option (1-2): " option
+echo "        ULTIMATE ENDER INSTALLER"
+echo "========================================"
+echo
+echo "1) MC PANEL"
+echo "2) VPS PANEL"
+echo "3) VPS MAKER"
+echo "4) VPS BOT"
+echo "5) DASHBOARD"
+echo "0) Exit"
+echo
+
+read -p "Select an option: " option
 
 case $option in
-    1)
-        echo "Installing VOIDORA CLOUD Dashboard..."
-        git clone https://github.com/ggghosain0-ux/Dash156.git
-        cd Dash156 || exit
-        bash install.sh
-        ;;
-    2)
-        echo "Installing SKYPORTD PANEL Dashboard..."
-        git clone https://github.com/ggghosain0-ux/Ender.git
-        cd Ender || exit
-        mkdir -p dash2
-        unzip dashv2.zip -d dash2
-        cd dash2 || exit
-        bash install-local.sh
-        ;;
-    *)
-        echo "Invalid option."
-        exit 1
-        ;;
+1)
+    bash <(curl -fsSL https://raw.githubusercontent.com/ggghosain0-ux/ANSH2/main/mcpanel.sh)
+    ;;
+2)
+    bash <(curl -fsSL https://raw.githubusercontent.com/ggghosain0-ux/ANSH2/main/vpspanel.sh)
+    ;;
+3)
+    bash <(curl -fsSL https://raw.githubusercontent.com/ggghosain0-ux/ANSH2/main/vpsmaker.sh)
+    ;;
+4)
+    bash <(curl -fsSL https://raw.githubusercontent.com/ggghosain0-ux/ANSH2/main/vpsbot.sh)
+    ;;
+5)
+    bash <(curl -fsSL https://raw.githubusercontent.com/ggghosain0-ux/ANSH2/main/dash.sh)
+    ;;
+0)
+    echo "Goodbye!"
+    exit 0
+    ;;
+*)
+    echo "Invalid option!"
+    ;;
 esac
